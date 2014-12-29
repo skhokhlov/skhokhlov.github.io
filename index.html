@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sergey Khokhlov</title>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
+    <style>
+        .b-page {
+            font: 15px/1.3 'EB Garamond', serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            color: #000;
+            background: #fff;
+        }
+
+        .b-card {
+            position: absolute;
+            margin: auto;
+            width: 500px;
+            height: 275px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            border: 1px solid #ddd;
+        }
+
+        .b-logo {
+            width: 110px;
+        }
+
+        .content {
+            position: absolute;
+            top: 30px;
+            left: 165px;
+            width: 300px;
+        }
+
+        .content__name {
+            font-size: 30px;
+            margin: 0;
+        }
+        .gap{
+            height:10px;
+        }
+        .content__link{
+            color: #4161C4;
+        }
+    </style>
+</head>
+<body class="b-page">
+<div class="b-card"  itemscope="true" itemtype="http://data-vocabulary.org/Person">
+    <div class="b-logo">
+        <!-- my unforgetable logo -->
+    </div>
+    <div class="content" >
+        <div class="content__title">
+            <h1 class="content__name" itemprop="name">Sergey Khokhlov</h1>
+        </div>
+        <div class="content__contact">
+            <div class="content__tel" itemprop="telephone">cell. +7 (916) 674-79-23</div>
+            <div class="gap"></div>
+            <div class="content__email"><a class="content__link" href="mailto:worldfly@yandex.ru" itemprop="email">worldfly@yandex.ru</a>
+            </div>
+            <div class="gap"></div>
+            <div class="content__github"><a class="content__link" href="//github.com/skhokhlov" itemprop="url">github.com/skhokhlov</a></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
