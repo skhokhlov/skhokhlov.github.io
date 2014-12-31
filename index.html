@@ -5,8 +5,11 @@
     <title>Sergey Khokhlov</title>
     <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'>
     <style>
-        .b-page {
-            font: 15px/1.3 'EB Garamond', serif;
+        .page {
+            font-size: 14px;
+            line-height: 1.45;
+            font-weight: 400;
+            font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -14,7 +17,7 @@
             background: #fff;
         }
 
-        .b-card {
+        .card {
             position: absolute;
             margin: auto;
             width: 500px;
@@ -26,33 +29,48 @@
             border: 1px solid #ddd;
         }
 
-        .b-logo {
-            width: 110px;
+        .logo a {
+            width: 150px;
+            height: 36px;
+            position: absolute;
+            left: 17px;
+            top: 128px;
+            border: 0;
+            background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMzYiPjxyZWN0IHg9IjUuMTMxIiB5PSI2LjI4MyIgd2lkdGg9IjE0Ni40NjUiIGhlaWdodD0iMzMuNzE3IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTM2LjIyMiA3LjMxMmMwIC4zNjMtLjE0Mi42OTYtLjQyNC45OTktLjI4My4zMDMtLjU5Ni40NTQtLjkzOC40NTQtLjE4MiAwLS4zNzQtLjAzLS41NzUtLjA5MS0uMjAyLS4wNjEtLjM2My0uMTE2LS40ODQtLjE2N2wtLjM2My0uMTUxYy0uNjU3IDExLjQxMy0yLjIxNiAxOS43NDQtNC42NzggMjQuOTkxLS42NDYgMS4zNjItMS40MTMgMi4wNDQtMi4zMDEgMi4wNDQtMi41MDMgMC00LjM2NS00LjkzLTUuNTg1LTE0Ljc4OS0xLjYwNCA0Ljc3My0yLjkyNyA4LjEyOS0zLjk2NiAxMC4wNjYtMS4xNzEgMi4xOTktMi4zMjYgMy4yOTktMy40NjYgMy4yOTktLjc4NyAwLTEuNTI0LS40NzQtMi4yMS0xLjQyMi0uNjU2LS45MDgtMS4zNjgtMi4zOTctMi4xMzQtNC40NjYtMS41MjUtNC4xMzgtMi4yODYtMTAuMzQ4LTIuMjg2LTE4LjYzM3YtMS4wOWMtLjIwMy4wMi0uNDcuMDY2LS44MDMuMTM2LS4yODIuMDYxLS40ODQuMDkxLS42MDUuMDkxLTEuMDA5IDAtMS41MTQtLjUyLTEuNTE0LTEuNTU5IDAtMS4yMjEgMS42MTQtMS44MzIgNC44NDQtMS44MzIgMS41MDMgMCAyLjcwOS4xODkgMy42MTguNTY3LjkwOC4zNzkgMS4zNjIuODUxIDEuMzYyIDEuNDE2IDAgMS4wOC0uNDg0IDEuNjItMS40NTMgMS42Mi0uMjQyIDAtLjYxMS0uMDctMS4xMDUtLjIxMi0uNTQ1LS4xNjEtLjk4NC0uMjU3LTEuMzE3LS4yODhsLS4wNjEgMy43ODVjMCA3LjUxOCAxLjI1MSAxMy42NDMgMy43NTQgMTguMzc1IDEuNTU0LTIuMTQ4IDMuMzItNi40NTcgNS4yOTgtMTIuOTI2LjM1My0xLjE1LjcwNi0yLjU2OCAxLjA2LTQuMjUzLjI5Mi0xLjM5My41MjQtMi4yOC42OTYtMi42NjQuMjcyLS42MTUuNjcxLS45MjMgMS4xOTYtLjkyMy43MzYgMCAxLjIxNi4zNDggMS40MzggMS4wNDQuMTUxLjQ5NS4yMjcgMS41MjQuMjI3IDMuMDg4IDAgLjI1Mi0uMDA1LjU1My0uMDE1LjlsLS4wMTUuNjQ0YzAgNi4xMzYgMS4wMDQgMTEuNDg5IDMuMDEyIDE2LjA2IDIuMTE5LTUuNDA4IDMuNDYxLTEzLjE5OSA0LjAyNi0yMy4zNzEtLjE1MS4wMS0uNDA5LjA1Ni0uNzcyLjEzNi0uMzAzLjA3MS0uNTQuMTA2LS43MTEuMTA2LS45ODkgMC0xLjQ4My0uNTE1LTEuNDgzLTEuNTQ0IDAtMS4xODEgMS4zNTItMS43NzEgNC4wNTctMS43NzEgMS4zNzIgMCAyLjUxMy4yNDIgMy40MjEuNzI3LjgzNi40NTMgMS4yNTUuOTg4IDEuMjU1IDEuNjA0em0xNi41OSAxMi41MThjMCAyLjk2Ny0uODY4IDUuMzMxLTIuNjA0IDcuMDkxLTEuNzM2IDEuNzYyLTQuMDUyIDIuNjQyLTYuOTQ4IDIuNjQyLTIuNDAyIDAtNC4yODQtLjgxOS01LjY0Ni0yLjQ2LTEuMzYyLTEuNjQtMi4wNDMtMy45MTctMi4wNDMtNi44MzQgMC0zLjA2Ny44MjItNS40NDkgMi40NjctNy4xNDUgMS42MTQtMS42NjUgMy44NTQtMi40OTggNi43MjEtMi40OTggMi40MDEgMCA0LjM0NC44NDMgNS44MjggMi41MjggMS40ODMgMS42ODYgMi4yMjUgMy45MTEgMi4yMjUgNi42NzZ6bS0zLjAxMi4wM2MwLTIuMDI4LS40OTItMy42MTUtMS40NzYtNC43Ni0uOTg0LTEuMTQ2LTIuMzI5LTEuNzE4LTQuMDM0LTEuNzE4LTMuODA1IDAtNS43MDcgMi4yODYtNS43MDcgNi44NTcgMCAyLjEwOS40MTQgMy43MzEgMS4yNDEgNC44NjYuODI3IDEuMTM2IDIuMDEzIDEuNzAzIDMuNTU3IDEuNzAzIDEuOTk4IDAgMy41NjctLjYxIDQuNzA4LTEuODMxIDEuMTQtMS4yMjEgMS43MTEtMi45MjcgMS43MTEtNS4xMTd6bTE3LjI3MS00LjExN2MwIC4zODQtLjExNi43MDctLjM0OC45NjktLjIzMi4yNjMtLjUxLjM5NC0uODMzLjM5NC0uMjQyIDAtLjYwMS0uMTc2LTEuMDc1LS41My0uNDc1LS4zNTMtLjkwMy0uNTMtMS4yODctLjUzLS45NTkgMC0xLjczNi40MjEtMi4zMzEgMS4yNjQtLjU5Ni44NDItLjg5MyAxLjk4LS44OTMgMy40MTN2MS45ODJjMCAyLjIxMS0uMjMyIDMuOTY3LS42OTYgNS4yNjgtLjQzNCAxLjIyMi0uOTk0IDEuODMyLTEuNjggMS44MzItLjkxOCAwLTEuMzc3LS40NTQtMS4zNzctMS4zNjIgMC0uMTgyLjE0MS0uODUxLjQyNC0yLjAwNi4yODItMS4xNTUuNDI0LTIuMjQyLjQyNC0zLjI2MiAwLTIuODI1LS40MDQtNS4wODYtMS4yMTEtNi43ODEtLjAyMS0uMDUtLjI5OC0uNTYtLjgzMy0xLjUyOS0uMjcyLS40OTQtLjQwOS0uODg4LS40MDktMS4xODEgMC0uMzIzLjE1Ni0uNjI1LjQ2OS0uOTA4LjMxMy0uMjgyLjY1MS0uNDI0IDEuMDE0LS40MjQgMS4wNjkgMCAxLjk1OCAxLjMxMiAyLjY2NCAzLjkzNiAxLjA0OS0yLjAxOCAyLjU3OC0zLjAyNyA0LjU4Ni0zLjAyNyAxLjAwOSAwIDEuODI2LjIzNSAyLjQ1Mi43MDQuNjI3LjQ2OS45NCAxLjA2MS45NCAxLjc3OHptNi40NzggMTQuOTA5YzAgLjY4Ny0uMDQ1IDEuMTU1LS4xMzYgMS40MDgtLjE3Mi40NDMtLjU0OS42NjYtMS4xMzEuNjY2LS45NTQgMC0xLjUxNi0uNzc3LTEuNjg3LTIuMzMyLS4yOTEtMi42MjMtLjQzNy02LjIxNS0uNDM3LTEwLjc3NyAwLTUuMDk2LjA3LTguMjI5LjIxMS05LjQuMTYtMS4yODEuNjY3LTEuOTIyIDEuNTIxLTEuOTIyIDEuMDA1IDAgMS41MDcuNjExIDEuNTA3IDEuODMyIDAgLjMwMy0uMDU2IDEuNTA2LS4xNjcgMy42MS0uMTExIDIuMTA0LS4xNjcgNC4wNDQtLjE2NyA1LjgyIDAgMS41NTQuMDgxIDMuNTY1LjI0MiA2LjAzMi4xNjMgMi40NjguMjQ0IDQuMTU1LjI0NCA1LjA2M3ptMjAuMjY4LTIyLjcyYzAtLjA2MS0uMDYxLjY5Ni0uMTgyIDIuMjcxLS4xMzEgMS44MjctLjI0MiAzLjc2OS0uMzMzIDUuODI4LS4xMTEgMi45NjctLjE2NyA2LjEyNi0uMTY3IDkuNDc2IDAgLjY4Ny4wMDUgMS4zOTEuMDE1IDIuMTExbC4wMTUgMS4xNDNjMCAxLjUwNC0uNDc3IDIuMjU2LTEuNDMgMi4yNTYtMS4wNDUgMC0xLjU2Ny0uODQ4LTEuNTY3LTIuNTQzIDAtLjM5NC4wMS0uNzAxLjAzLS45MjQtMS45MDUgMS44NzctNC4xMTIgMi44MTYtNi42MjMgMi44MTYtMi4wOTYgMC0zLjc1Ny0uNjc5LTQuOTgyLTIuMDM2cy0xLjgzNy0zLjIyMi0xLjgzNy01LjU5M2MwLTMuMjI5Ljg5LTUuODM4IDIuNjY4LTcuODI2IDEuNzc5LTEuOTg4IDQuMTEtMi45ODIgNi45OTMtMi45ODIgMS4zNDEgMCAyLjcyNy4zMDggNC4xNTguOTIzLjA3LTIuNzk1LjE2Ny00LjQ3LjI4OC01LjAyNS4yMjMtMS4wMjkuNzgxLTEuNTQ0IDEuNjczLTEuNTQ0Ljg1NS0uMDAxIDEuMjgxLjU1IDEuMjgxIDEuNjQ5em0tMy4zOSA3Ljg3MWMtMS4zMi0uODI3LTIuNjQ2LTEuMjQxLTMuOTc2LTEuMjQxLTIuMDU2IDAtMy42NzguNzA5LTQuODY3IDIuMTI2LTEuMTg5IDEuNDE4LTEuNzg0IDMuMzQzLTEuNzg0IDUuNzc0IDAgMS42NjYuNCAyLjk2IDEuMjAyIDMuODgzLjgwMS45MjQgMS45MDcgMS4zODUgMy4zMTcgMS4zODUgMS43NzMgMCAzLjEyNC0uNTkgNC4wNTEtMS43NzEuMjYyLS4zOTQuNTE5LS43OTIuNzcxLTEuMTk2LjI5Mi0uNDI0LjY1NS0uNjc2IDEuMDg4LS43NTYuMDAxLTIuODM1LjA2Ni01LjU3LjE5OC04LjIwNHptMzMuNDgyLTUuNzM3YzAgLjkwOC0uNjIxIDEuMzYyLTEuODYyIDEuMzYyLjE3MSAwLS45MjktLjEzNi0zLjMtLjQwOS0yLjQzMi0uMjgyLTQuOTctLjQzNC03LjYxNC0uNDU0LjM1MyAxLjY5NS41NiA0LjA3Mi42MjEgNy4xMjkuNDM0LjAyMSAxLjAzNC4wMyAxLjgwMS4wMyAxLjI3MSAwIDIuNTA3LS4wNTMgMy43MDgtLjE1OSAxLjIwMS0uMTA1IDEuNzYxLS4xNTkgMS42OC0uMTU5IDEuMTQgMCAxLjcxLjUxIDEuNzEgMS41MjkgMCAuODg4LS45MzQgMS40NDMtMi44IDEuNjY1LS41MjUuMDYxLTEuODg3LjA5MS00LjA4Ny4wOTFoLTIuMDEzYy0uMDcxIDQuOTY1LS4yMjIgOC4yNy0uNDU0IDkuOTE1LS4zMDMgMi4xMzktLjkwMyAzLjIwOS0xLjgwMSAzLjIwOS0uOTQ5IDAtMS40MjMtLjQ5LTEuNDIzLTEuNDY5IDAgLjMzMy4xMTktLjgwNS4zNTUtMy40MTMuMjM3LTIuNjA4LjM1Ni01LjM5Ni4zNTYtOC4zNjMgMC00LjQxLS4yMTctNy42NTQtLjY1MS05LjczMy0xLjE3MS4yMzItMS45OTguMzQ4LTIuNDgyLjM0OC0xLjEyIDAtMS42OC0uNTItMS42OC0xLjU1OSAwLTEuMzQyIDIuODEtMi4wMTMgOC40MzEtMi4wMTMgMy42MTIgMCA2LjY5NS4yMjcgOS4yNDkuNjgxIDEuNTA0LjI3NCAyLjI1Ni44NjQgMi4yNTYgMS43NzJ6bTQuMjg0IDIwLjU4NmMwIC42ODctLjA0NSAxLjE1NS0uMTM2IDEuNDA4LS4xNzIuNDQzLS41NDkuNjY2LTEuMTMxLjY2Ni0uOTU0IDAtMS41MTYtLjc3Ny0xLjY4Ny0yLjMzMi0uMjkxLTIuNjIzLS40MzctNi4yMTUtLjQzNy0xMC43NzcgMC01LjA5Ni4wNy04LjIyOS4yMTEtOS40LjE2LTEuMjgxLjY2Ny0xLjkyMiAxLjUyMS0xLjkyMiAxLjAwNSAwIDEuNTA3LjYxMSAxLjUwNyAxLjgzMiAwIC4zMDMtLjA1NiAxLjUwNi0uMTY3IDMuNjEtLjExMSAyLjEwNC0uMTY3IDQuMDQ0LS4xNjcgNS44MiAwIDEuNTU0LjA4MSAzLjU2NS4yNDIgNi4wMzIuMTYzIDIuNDY4LjI0NCA0LjE1NS4yNDQgNS4wNjN6bTE1LjQyNC0xOS4wNzJjMCAxLjI3MS0uNTE1IDMuNDcyLTEuNTQ0IDYuNi0uOTQ5IDIuODg3LTIuNjU0IDYuNTQ1LTUuMTE2IDEwLjk3NS0uNDk1Ljk5OC0uOTk0IDEuOTk4LTEuNDk5IDIuOTk2LS40MzQuNzc3LS45NDkgMS4xNjYtMS41NDQgMS4xNjYtLjM1NCAwLS42NzMtLjE1MS0uOTYxLS40NTQtLjI4Ny0uMzAzLS40MzEtLjYzNi0uNDMxLS45OTkgMC0uNjU2LjQ0NS0xLjc1MSAxLjMzNS0zLjI4NSAyLjAzMy0zLjU0OCAzLjA4NC01LjM4MyAzLjE1NS01LjUwNC0xLjk3Ni0yLjY2MS0zLjUzOC01LjE0LTQuNjg3LTcuNDM4LS45MTgtMS44MjYtMS4zNzctMy4wNjMtMS4zNzctMy43MDggMC0uOTA4LjQzNC0xLjM2MiAxLjMwMy0xLjM2Mi41NDUgMCAxLjA5MS40NzUgMS42MzYgMS40MjMuNDk1IDEuMDYuOTg1IDIuMTE5IDEuNDcgMy4xNzkuODY1IDEuODQ3IDEuODYgMy41NjggMi45ODUgNS4xNjQuNzQ3LTEuOTI4IDEuMzQyLTMuOTM3IDEuNzg2LTYuMDI2LjQ3NC0yLjE3LjcxNi0zLjI3NS43MjYtMy4zMTUuMjkzLS44MjcuNzQ5LTEuMjQxIDEuMzY2LTEuMjQxLjkzMi0uMDAyIDEuMzk3LjYwOCAxLjM5NyAxLjgyOXoiLz48L3N2Zz4=);
         }
 
         .content {
             position: absolute;
-            top: 30px;
+            top: 55px;
             left: 165px;
             width: 300px;
         }
 
         .content__name {
             font-size: 30px;
+            line-height: 1.0556;
+            font-weight: 200;
+            /*letter-spacing: -0.015em;*/
             margin: 0;
         }
         .gap{
             height:10px;
         }
         .content__link{
-            color: #4161C4;
+            color: #013AEC;
+            text-decoration:none;
+        }
+        .content__contact{
+            margin-top: 20px;
         }
     </style>
 </head>
-<body class="b-page">
-<div class="b-card"  itemscope="true" itemtype="http://data-vocabulary.org/Person">
-    <div class="b-logo">
-        <!-- my unforgetable logo -->
+<body class="page">
+<div class="card"  itemscope="true" itemtype="http://data-vocabulary.org/Person">
+    <div class="logo">
+        <!--<a href="//worldfly.org">-->
+            <!--<span>World Fly</span>-->
+        <!--</a>-->
     </div>
     <div class="content" >
         <div class="content__title">
@@ -61,10 +79,17 @@
         <div class="content__contact">
             <div class="content__tel" itemprop="telephone">cell. +7 (916) 674-79-23</div>
             <div class="gap"></div>
-            <div class="content__email"><a class="content__link" href="mailto:worldfly@yandex.ru" itemprop="email">worldfly@yandex.ru</a>
-            </div>
             <div class="gap"></div>
-            <div class="content__github"><a class="content__link" href="//github.com/skhokhlov" itemprop="url">github.com/skhokhlov</a></div>
+            <div class="content__email">
+                <a class="content__link" href="mailto:sergey.a.khokhlov@gmail.com" itemprop="email">sergey.a.khokhlov@gmail.com</a>
+            </div>
+
+            <div class="content__github">
+                <a class="content__link" href="//github.com/skhokhlov" itemprop="url">github.com/skhokhlov</a>
+            </div>
+            <!--<div class="content__web">-->
+                <!--<a class="content__link" href="//worldfly.org" itemprop="url">worldfly.org</a>-->
+            <!--</div>-->
         </div>
     </div>
 </div>
