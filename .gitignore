@@ -1,3 +1,5 @@
 .idea
 projectFilesBackup
 *~
+node_modules
+server.js
