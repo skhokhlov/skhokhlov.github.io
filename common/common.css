@@ -192,3 +192,11 @@ body {
         height: 100%;
     }
 }
+
+.landings-wrapper{
+    display: none;
+}
+
+.landings-wrapper_active {
+    display: block;
+}

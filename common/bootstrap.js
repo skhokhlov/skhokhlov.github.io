@@ -1,4 +1,4 @@
-(function (window, Promise){
+(function (window, Promise) {
 
     /* Promises
      */
@@ -36,11 +36,11 @@
         });
     };
 
-    request('/common/landings.html').then(function(res){
+    request('/common/landings.html').then(function (res) {
         document.getElementsByClassName('landings-wrapper')[0].innerHTML = res;
         document.getElementsByClassName('landings-link')[0].setAttribute('class', 'landings-link landings-link_active');
+        document.getElementsByClassName('landings-wrapper')[0].setAttribute('class', 'landings-wrapper landings-wrapper_active');
     });
-
 
 
 })(window, Promise);
