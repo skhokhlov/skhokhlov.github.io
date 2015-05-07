@@ -1,17 +1,4 @@
-(function (window, Promise) {
-
-    /* Promises
-     */
-    if (typeof Promise.prototype.done !== 'function') {
-        Promise.prototype.done = function (onFulfilled, onRejected) {
-            var self = arguments.length ? this.then.apply(this, arguments) : this;
-            self.then(null, function (err) {
-                setTimeout(function () {
-                    throw err
-                }, 0)
-            })
-        }
-    }
+(function () {
 
     /**
      * XHR GET async request to url with Promises
@@ -43,4 +30,4 @@
     });
 
 
-})(window, Promise);
+})();
