@@ -1,6 +1,6 @@
 (function () {
     var Request = new XMLHttpRequest();
-    Request.open('GET', url, true);
+    Request.open('GET', '/common/landings.html', true);
     Request.onload = function (res) {
         if (Request.status === 200) {
             document.getElementsByClassName('landings-wrapper')[0].innerHTML = res;
