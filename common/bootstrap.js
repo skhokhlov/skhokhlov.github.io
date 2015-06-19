@@ -11,7 +11,7 @@
         }
     };
     Request.onerror = function () {
-        throw new Error("Network Error"));
+        throw new Error("Network Error");
     };
     Request.send(null);
 })();
