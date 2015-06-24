@@ -6,6 +6,7 @@
     <style>
         .page {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
         }
 
         .head {
@@ -29,12 +30,21 @@
             color: #f00;
         }
 
+        .body {
+            max-width: 83vw;
+            margin: 0 auto;
+        }
+
         .body__article {
-            display: none;
+            /*display: none;*/
+            transition: opacity 0.2s;
+            opacity: 0;
+            position: absolute;
         }
 
         .body__article_active {
             display: block;
+            opacity: 1;
         }
 
     </style>
@@ -62,6 +72,8 @@
 
 <div class="body">
     <article class="body__article body__article_me" id="me">
+        <h2>I am Sergey A. Khokhlov</h2>
+
         <p>I am the foundation myself.</p>
     </article>
     <article class="body__article body__article_math" id="math">
@@ -74,9 +86,7 @@
 
     </article>
     <article class="body__article body__article_you" id="you">
-        <p>Without you, nothing will.</p>
-
-        <p>I can not do anything without you.</p>
+        <p>Together we can all. And without you, nothing will.</p>
 
         <p>Let's be together.</p>
     </article>
@@ -129,8 +139,13 @@
 
         var active = {};
 
+        if (window.location.hash !== null) {
+            hashEvent();
+        }
 
-        window.addEventListener("hashchange", function () {
+        window.addEventListener("hashchange", hashEvent, false);
+
+        function hashEvent() {
             var h = window.location.hash;
 
             if (h === names.me.hash) {
@@ -199,8 +214,7 @@
 
                 active = names.science;
             }
-
-        }, false);
+        }
 
         function removeClass(element, className) {
             var classes = element.className.split(' ');
@@ -221,7 +235,6 @@
             var classes = element.className.split(' ');
 
             if (classes.indexOf(className) !== -1) {
-                console.log('ex');
                 return false;
             }
 
