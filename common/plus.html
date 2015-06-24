@@ -2,16 +2,19 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>+me +math +science +art +you</title>
     <style>
+        .page {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
         .head {
-            margin-top: 35vh;
+            margin-top: 30vh;
         }
 
         .head__body {
             font-weight: 400;
-            font-family: "Lucida Grande", sans;
-            font-size: 5vw;
+            font-size: 6vw;
             text-align: center;
 
         }
@@ -19,6 +22,7 @@
         .head__item {
             text-decoration: none;
             color: inherit;
+            transition: color 0.1s;
         }
 
         .head__item_active {
@@ -35,7 +39,7 @@
 
     </style>
 </head>
-<body>
+<body class="page">
 <div class="head">
     <h1 class="head__body">
         <a href="#me" class="head__item head__item_me">
@@ -197,11 +201,6 @@
             }
 
         }, false);
-
-//        d.getElementsByClassName('head__item_me')[0].addEventListener('click', function () {
-//            this.className += ' head__item_active';
-//            console.log(this.className);
-//        });
 
         function removeClass(element, className) {
             var classes = element.className.split(' ');
