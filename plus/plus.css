@@ -1,0 +1,42 @@
+.page {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.head {
+    margin-top: 30vh;
+}
+
+.head__body {
+    font-weight: 400;
+    font-size: 6vw;
+    text-align: center;
+
+}
+
+.head__item {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.1s;
+}
+
+.head__item_active {
+    color: #f00;
+}
+
+.body {
+    max-width: 83vw;
+    margin: 0 auto;
+}
+
+.body__article {
+    /*display: none;*/
+    transition: opacity 0.2s;
+    opacity: 0;
+    position: absolute;
+}
+
+.body__article_active {
+    display: block;
+    opacity: 1;
+}
