@@ -1,0 +1,40 @@
+.page, .card__text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    color: #000;
+    text-decoration: none;
+}
+
+.card {
+    width: 8in;
+    margin: 4% auto;
+    box-sizing: content-box;
+}
+
+.card__side {
+    border: 1px solid #1b1b1b;
+    width: 3.7in;
+    height: 2in;
+    display: inline-block;
+}
+
+.card__left {
+    position: relative;
+    left: 0.69cm;
+    top: 2.97cm;
+}
+
+.card__right {
+    position: relative;
+    top: 2.395cm;
+    left: 5.52cm;
+}
+
+.card__text {
+    padding: 0;
+    margin: 0;
+}
+
+.card__image {
+    width: 3.7in;
+}
