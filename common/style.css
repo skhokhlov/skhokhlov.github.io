@@ -22,12 +22,14 @@
     position: relative;
     left: 0.69cm;
     top: 2.97cm;
+    width: 3.3cm;
 }
 
 .card__right {
     position: relative;
     top: 2.395cm;
     left: 5.52cm;
+    width: 3.12cm;
 }
 
 .card__text {
