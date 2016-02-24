@@ -1,5 +1,5 @@
 .page, .card__text {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Lucida Grande", Calibri, sans-serif;
     font-size: 12pt;
     color: #000;
     text-decoration: none;
@@ -33,10 +33,22 @@
 }
 
 .card__text {
-    padding: 0;
+    padding: 0 0 .1cm 0;
     margin: 0;
+}
+
+.card__text_header {
+    font-size: 14pt;
+    font-weight: normal;
+    padding-bottom: .8cm;
 }
 
 .card__image {
     width: 3.7in;
+}
+
+.card__content {
+    position: relative;
+    top: 1.18cm;
+    left: 1.23cm;
 }
